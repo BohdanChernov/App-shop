@@ -1,0 +1,15 @@
+/home/bohdan/IdeaProjects/shop-all-modules/parser-service/src/main/java/com/parser/www/models/laptop/laptopDetails/DisplayType.java
+/home/bohdan/IdeaProjects/shop-all-modules/parser-service/src/main/java/com/parser/www/models/laptop/laptopDetails/LaptopManufacturer.java
+/home/bohdan/IdeaProjects/shop-all-modules/parser-service/src/main/java/com/parser/www/models/laptop/laptopDetails/ProcessorType.java
+/home/bohdan/IdeaProjects/shop-all-modules/parser-service/src/main/java/com/parser/www/models/laptop/laptopDetails/StorageType.java
+/home/bohdan/IdeaProjects/shop-all-modules/parser-service/src/main/java/com/parser/www/models/laptop/Laptop.java
+/home/bohdan/IdeaProjects/shop-all-modules/parser-service/src/main/java/com/parser/www/controllers/ParserController.java
+/home/bohdan/IdeaProjects/shop-all-modules/parser-service/src/main/java/com/parser/www/models/laptop/laptopDetails/StorageSize.java
+/home/bohdan/IdeaProjects/shop-all-modules/parser-service/src/main/java/com/parser/www/models/laptop/laptopDetails/DisplayResolution.java
+/home/bohdan/IdeaProjects/shop-all-modules/parser-service/src/main/java/com/parser/www/parser/ParserServiceSubsidiary.java
+/home/bohdan/IdeaProjects/shop-all-modules/parser-service/src/main/java/com/parser/www/application/ParserApplication.java
+/home/bohdan/IdeaProjects/shop-all-modules/parser-service/src/main/java/com/parser/www/models/laptop/laptopDetails/DisplayDiagonal.java
+/home/bohdan/IdeaProjects/shop-all-modules/parser-service/src/main/java/com/parser/www/models/laptop/laptopDetails/LaptopPhoto.java
+/home/bohdan/IdeaProjects/shop-all-modules/parser-service/src/main/java/com/parser/www/models/laptop/laptopDetails/RAMType.java
+/home/bohdan/IdeaProjects/shop-all-modules/parser-service/src/main/java/com/parser/www/parser/ParserService.java
+/home/bohdan/IdeaProjects/shop-all-modules/parser-service/src/main/java/com/parser/www/models/laptop/laptopDetails/RAMSize.java

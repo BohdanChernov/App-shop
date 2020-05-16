@@ -1,0 +1,15 @@
+com/parser/www/models/laptop/laptopDetails/LaptopPhoto.class
+com/parser/www/models/laptop/laptopDetails/StorageSize.class
+com/parser/www/parser/ParserService.class
+com/parser/www/models/laptop/Laptop.class
+com/parser/www/models/laptop/laptopDetails/LaptopManufacturer.class
+com/parser/www/parser/ParserServiceSubsidiary.class
+com/parser/www/models/laptop/laptopDetails/DisplayDiagonal.class
+com/parser/www/application/ParserApplication.class
+com/parser/www/models/laptop/laptopDetails/ProcessorType.class
+com/parser/www/controllers/ParserController.class
+com/parser/www/models/laptop/laptopDetails/RAMType.class
+com/parser/www/models/laptop/laptopDetails/StorageType.class
+com/parser/www/models/laptop/laptopDetails/RAMSize.class
+com/parser/www/models/laptop/laptopDetails/DisplayResolution.class
+com/parser/www/models/laptop/laptopDetails/DisplayType.class
