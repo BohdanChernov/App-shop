@@ -83,7 +83,7 @@
 
                 <div class="form-group row">
                     <label class="col-5 col-form-label">Тип памяти RAM:</label>
-                    <input class="col-5 form-control" type="text" name="ramSize" value="${product.getRamType().getValue()}">
+                    <input class="col-5 form-control" type="text" name="ramType" value="${product.getRamType().getValue()}">
                 </div>
 
                 <div class="form-group row">
