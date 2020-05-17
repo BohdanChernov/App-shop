@@ -46,7 +46,7 @@ public class ParserServiceSubsidiary {
     }
 
     public String findPrice() {
-        String price = "no information";
+        String price = "0";
         Elements priceToParse = document.select("p.product-carriage__price");
         Pattern ptrn9 = Pattern.compile("\\w[^\\₴]*");
         Matcher matcher9 = ptrn9.matcher(priceToParse.text());

@@ -10,10 +10,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import javax.servlet.http.HttpSession;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import javax.swing.text.html.Option;
+import java.util.*;
 
 @Controller
 public class BasketController {
@@ -24,12 +22,22 @@ public class BasketController {
 
     @GetMapping("/getBasketContent")
     public String getBasketContent(ModelMap model, HttpSession httpSession) {
-        Set<String> products = (Set<String>) httpSession.getAttribute("products");
+        Set<String> productsList = (Set<String>) httpSession.getAttribute("products");
 
-
+        Optional<Set<String>> products = null;
         List<Laptop> laptopList = new ArrayList<>();
 
-        products.forEach(s -> laptopList.add(daoLaptopInterface.findById(Long.valueOf(s)).get()));
+        if (productsList != null) {
+            products = Optional.of(productsList);
+
+            if (!products.isEmpty()) {
+                products.get().forEach(s -> {
+                    Optional<Laptop> laptop = daoLaptopInterface.findById(Long.valueOf(s));
+                    if (!laptop.isEmpty())
+                        laptopList.add(laptop.get());
+                });
+            }
+        }
 
         Integer totalPrice = 0;
         for (Laptop laptop : laptopList) {
@@ -45,22 +53,6 @@ public class BasketController {
 
     @GetMapping("/basket")
     public String getBasket(ModelMap model, HttpSession httpSession) {
-//        Set<String> products = (Set<String>) httpSession.getAttribute("products");
-
-
-//        List<Laptop> laptopList = new ArrayList<>();
-
-//        products.forEach(s -> laptopList.add(daoLaptopInterface.findById(Long.valueOf(s)).get()));
-
-//        Integer totalPrice = 0;
-//        for (Laptop laptop : laptopList) {
-//            totalPrice += laptop.getPrice();
-//        }
-
-
-//        model.addAttribute("products", laptopList);
-//        model.addAttribute("totalPrice", totalPrice);
-
         return "basket";
     }
 
@@ -89,7 +81,7 @@ public class BasketController {
         Set<String> products = (Set<String>) httpSession.getAttribute("products");
 
         products.forEach(s -> {
-            if(s.equals(id)){
+            if (s.equals(id)) {
                 products.remove(s);
             }
         });

@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.parser.www")
+@ComponentScan(basePackages = "com.parser")
 public class ParserApplication {
 
     public static void main(String[] args) {

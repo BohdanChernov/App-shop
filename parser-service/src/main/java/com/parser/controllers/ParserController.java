@@ -1,7 +1,7 @@
 package com.parser.controllers;
 
-import com.parser.models.Laptop;
-import com.parser.models.laptopDetails.LaptopPhoto;
+import com.parser.models.laptop.Laptop;
+import com.parser.models.laptop.laptopDetails.LaptopPhoto;
 import com.parser.parser.ParserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

@@ -34,19 +34,19 @@
 </header>
 
 <main role="main" class="container">
-    <form>
+    <form method="post" action="/sendMessage">
         <div class="justify-content-center">
             <div class="row">
                 <label class="sr-only" for="inlineFormInput">Name</label>
-                <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Ваше имя">
+                <input name="name" type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Ваше имя">
             </div>
             <div class="row">
                 <label class="sr-only" for="inlineFormInput">Name</label>
-                <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Ваш e-mail">
+                <input name="email" type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Ваш e-mail">
             </div>
             <div class="row">
                 <label class="sr-only" for="inlineFormInput">Name</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ваше обращение"></textarea>
+                <textarea name="body" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ваше обращение"></textarea>
             </div>
             <div class="row mt-1">
                 <button type="submit" class="btn btn-outline-secondary mb-2">Отправить</button>
@@ -61,6 +61,9 @@
             <div class="form-inline">
                 <li class="nav-item">
                     <a class="btn btn-light" id="footerButton" href="/login">Вход администратора</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-light" id="footerButton" href="/edit">Редактирование товаров</a>
                 </li>
                 <li class="nav-item">
                     <a class="btn btn-light" id="footerButton" href="/parser">Парсер товаров</a>

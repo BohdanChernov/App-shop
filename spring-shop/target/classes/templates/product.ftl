@@ -60,6 +60,23 @@
 
         <span><a id="logo" href="/">Laptops to GO</a></span>
 
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
+                data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="form-inline ml-auto">
+                <ul class="navbar-nav">
+                    <input id="searchQuery" class="form-control mt-1 mr-1" type="search" placeholder="Поиск"
+                           aria-label="Search">
+                    <button id="search" class="btn btn-light mt-1" type="submit">Найти</button>
+                    <a href="/basket"><img id="basket" src="/images/basket-free.svg"></a></img>
+                </ul>
+            </div>
+        </div>
+
     </nav>
 </header>
 
@@ -136,6 +153,9 @@
             <div class="form-inline">
                 <li class="nav-item">
                     <a class="btn btn-light" id="footerButton" href="/login">Вход администратора</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-light" id="footerButton" href="/edit">Редактирование товаров</a>
                 </li>
                 <li class="nav-item">
                     <a class="btn btn-light" id="footerButton" href="/parser">Парсер товаров</a>

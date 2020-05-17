@@ -60,6 +60,9 @@
                     <a class="btn btn-light" id="footerButton" href="/login">Вход администратора</a>
                 </li>
                 <li class="nav-item">
+                    <a class="btn btn-light" id="footerButton" href="/edit">Редактирование товаров</a>
+                </li>
+                <li class="nav-item">
                     <a class="btn btn-light" id="footerButton" href="/parser">Парсер товаров</a>
                 </li>
 
@@ -67,7 +70,7 @@
                     <a class="btn btn-light" id="footerButton" href="/contacts">Контакты</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-light" id="footerButton" href="/contacts">Условия доставки</a>
+                    <a class="btn btn-light" id="footerButton" href="/delivery">Условия доставки</a>
                 </li>
                 <li class="nav-item">
                     <a class="btn btn-light" id="footerButton" href="/feedback">Обратная

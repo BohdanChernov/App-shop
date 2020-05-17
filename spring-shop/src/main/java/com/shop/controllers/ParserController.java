@@ -95,6 +95,7 @@ public class ParserController {
             daoStorageSize.save(laptop.getStorageSize());
             daoStorageType.save(laptop.getStorageType());
 
+
             daoLaptopInterface.save(laptop);
 
             laptop.getPhoto().forEach(laptopPhoto -> {

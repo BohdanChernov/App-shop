@@ -69,6 +69,9 @@
                         <a class="btn btn-light" id="footerButton" href="/login">Вход администратора</a>
                     </li>
                     <li class="nav-item">
+                        <a class="btn btn-light" id="footerButton" href="/edit">Редактирование товаров</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="btn btn-light" id="footerButton" href="/parser">Парсер товаров</a>
                     </li>
 

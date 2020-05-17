@@ -21,30 +21,8 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
-
             getBasketContent();
-
-            // $(".deleteFromBasket").click(function (event) {
-            //     var id = $(this).attr('value');
-            //     alert(id);
-            //     deleteProductFromBasket(id);
-            // })
-
         });
-
-        // function deleteProductFromBasket(id) {
-        //
-        //     $.ajax({
-        //         type: "POST",
-        //         url: "/deleteFromBasket",
-        //         contentType: 'application/json',
-        //         dataType: 'text',
-        //         data: id,
-        //         success: function (data) {
-        //             console.log("Succes!")
-        //         }
-        //     });
-        // }
 
         function getBasketContent() {
             $.ajax({
@@ -86,6 +64,9 @@
             <div class="form-inline">
                 <li class="nav-item">
                     <a class="btn btn-light" id="footerButton" href="/login">Вход администратора</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-light" id="footerButton" href="/edit">Редактирование товаров</a>
                 </li>
                 <li class="nav-item">
                     <a class="btn btn-light" id="footerButton" href="/parser">Парсер товаров</a>

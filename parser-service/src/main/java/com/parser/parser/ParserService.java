@@ -1,7 +1,7 @@
 package com.parser.parser;
 
-import com.parser.models.Laptop;
-import com.parser.models.laptopDetails.*;
+import com.parser.models.laptop.Laptop;
+import com.parser.models.laptop.laptopDetails.*;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.springframework.stereotype.Service;
