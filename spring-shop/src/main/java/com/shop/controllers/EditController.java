@@ -125,6 +125,8 @@ public class EditController {
 
         model.addAttribute("product", laptop);
 
+        deleteEmptyCharacteristics.checkAllFields();
+
         return "edit";
     }
 }
